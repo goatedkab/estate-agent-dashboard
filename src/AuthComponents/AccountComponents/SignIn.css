@@ -1,0 +1,61 @@
+.sign-in-container{
+  padding: 3rem;
+  border-radius: 2rem;
+  box-shadow: rgba(6, 0, 166, 0.148) 0px 10px 50px;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  background-color: #ffffffc7;
+
+}
+
+.sign-in-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  border: none;
+}
+
+.sign-in-form h1{
+  padding: 0;
+  line-height: 0;
+
+}
+
+input {
+  background-color : #ffffff; 
+}
+
+
+.Login-button {
+align-items: center;
+background-color: #9c45ff;
+border-radius: 8px;
+border-style: none;
+box-shadow: rgba(255, 255, 255, 0.26) 0 1px 2px inset;
+box-sizing: border-box;
+color: #fff;
+cursor: pointer;
+display: flex;
+flex-direction: row;
+font-family: 'montserrat';
+flex-shrink: 0;
+line-height: 1;
+margin: 0;
+padding: 15px 26px;
+text-align: center;
+text-transform: none;
+transition: color .13s ease-in-out,background .13s ease-in-out,opacity .13s ease-in-out,box-shadow .13s ease-in-out;
+user-select: none;
+-webkit-user-select: none;
+touch-action: manipulation;
+border-radius: 2rem;
+}
+
+.Login-button:active {
+background-color: #b070ff;
+}
+
+.Login-button:hover {
+background-color: #b151ff;
+}

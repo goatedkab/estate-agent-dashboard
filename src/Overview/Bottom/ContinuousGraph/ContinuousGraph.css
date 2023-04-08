@@ -1,0 +1,8 @@
+.ContinuousGraph{
+    background-color: white;
+    border-radius: var(--borderRadius);
+    box-shadow: var(--boxShadow);
+    width: auto;
+    flex: 1;
+
+}

@@ -1,0 +1,20 @@
+.Bar
+{
+    width: 31rem;
+    background-color : #ffffff; 
+    border: none;
+    padding:0.8rem;
+    box-shadow: var(--boxShadow);
+    border-radius: 0.6rem;
+    font-family: 'montserrat';
+    font-size: 14px;
+
+}
+form {
+    color: #555;
+    display: flex;
+    padding: 2px;
+    border: 1px solid currentColor;
+    border-radius: 5px;
+    margin: 0 0 30px;
+  }

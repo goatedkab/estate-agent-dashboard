@@ -1,0 +1,7 @@
+.BarGraph{
+    background-color: white;
+    box-shadow: var(--boxShadow);
+    border-radius: var(--borderRadius);
+    flex: 1;
+
+}

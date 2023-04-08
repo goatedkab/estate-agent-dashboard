@@ -1,0 +1,17 @@
+.TopTop {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.welcome-text{
+    line-height: 0px;
+    text-shadow: 0px 0px 3px rgb(155, 155, 155);
+
+}
+
+.welcome-text p{
+    font-size: 13px;
+    color: var(--gray);
+}

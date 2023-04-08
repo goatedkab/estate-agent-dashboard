@@ -1,0 +1,6 @@
+.PieChart{
+    background-color: white;
+    box-shadow: var(--boxShadow);
+    border-radius: var(--borderRadius);
+    height: auto;
+}

@@ -1,0 +1,28 @@
+.Bottom{
+    display: flex;
+    flex-direction: row;
+    /* padding-top: 1rem; */
+    justify-content: space-evenly;
+    gap: var(--hozGap);
+}
+
+
+@media screen and (max-width: 1200px) {
+    .Bottom{
+        justify-content: flex-start;
+        margin-top: 3rem;
+    }
+}
+
+@media screen and (max-width: 768px)
+{
+    .Bottom{
+        width: 100%;
+        margin-top: 0;
+    }
+    .Bottom>div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

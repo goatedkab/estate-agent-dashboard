@@ -1,0 +1,38 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+  
+  body, html {
+    font-family: 'Montserrat', sans-serif;
+  
+  }
+  
+  .AppBody {
+    font-family: 'Montserrat', sans-serif;
+    display: grid;
+    height: 98.5vh;
+    width: 99vw;
+    border-radius: 3rem;
+    background: var(--glass);
+    grid-template-columns: 15rem auto;
+    overflow: hidden;
+  }
+
+  h2 {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  
+  @media screen and (max-width: 1200px) {
+    .AppBody{
+      grid-template-columns: 10% 50% auto;
+      overflow-y: scroll;
+    } 
+  }
+  
+  @media screen and (max-width: 768px) {
+    .AppBody{
+      grid-template-columns: 1fr;
+    } 
+  }
+  

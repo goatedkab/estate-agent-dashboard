@@ -1,0 +1,43 @@
+.Listings{
+  padding: 4rem;
+  overflow: scroll;
+}
+
+.popular-movies{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-column-gap: 1rem;
+  grid-row-gap: 2rem;
+}
+
+.Listings img{
+  width: 70%;
+  height:25vh;
+  object-fit: cover;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 0.8rem;
+}
+
+.filter-container button
+{
+  margin-right: 2rem;
+  min-width: 5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  background: white;
+  color: var(--siftPurple);
+  border-radius: 1rem;
+  border: 2px solid var(--siftPurple);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button.active
+{
+  background: rgb(35, 35, 35);
+  color: white;
+}
