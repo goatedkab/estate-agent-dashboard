@@ -45,37 +45,46 @@ const makeStyle=(status)=>{
 export default function BasicTable() {
   return (
       <div className="Table">
-        <h2>Table</h2>
+        <h2 className="section-title">Recent Messages</h2>
+        <table class="landlord-messages">
+    <thead>
+        <tr>
+            <th>Property</th>
+            <th>Designated</th>
+            <th>Time</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td > 
+            <div className="agent-cell">
+            <div className="propertyPic">
+              <img src="https://img.freepik.com/free-psd/3d-illustration-person-with-sunglasses_23-2149436188.jpg?w=2000"></img>
+            </div> 
+            <b>Dominic</b>
+            </div>
+            </td>
 
-        <TableContainer
-        >
-          <Table sx={{ minWidth: 650 }} aria-label="simple table">
-            <TableHead>
-              <TableRow>
-                <TableCell>Product</TableCell>
-                <TableCell align="left">Date</TableCell>
-                <TableCell align="left">Status</TableCell>
-                <TableCell align="left"></TableCell>
-              </TableRow>
-            </TableHead>
-            <TableBody style={{  }}>
-              {rows.map((row) => (
-                <TableRow
-                  key={row.name}
-                  sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
-                >
-                  <TableCell component="th" scope="row">
-                    {row.name}
-                  </TableCell>
-                  <TableCell align="left">{row.date}</TableCell>
-                  <TableCell align="left">
-                    <span className="status" style={makeStyle(row.status)}>{row.status}</span>
-                  </TableCell>
-                </TableRow>
-              ))}
-            </TableBody>
-          </Table>
-        </TableContainer>
+            <td>
+            <div className="property-cell">
+            <div className="propertyPic">
+              <img src="https://media.rightmove.co.uk/44k/43775/133426481/43775_P261736_IMG_00_0000.jpeg"></img>
+            </div> 
+             <span>23, belgrave road, Fulham</span>
+            </div>
+            </td>
+            <td>
+            <div className="date-cell">
+            <div className="bullet-point"></div> 11:30AM, Dec 8
+            </div>
+            </td>
+        </tr>
+        
+
+    </tbody>
+</table>
       </div>
   );
 }
+
+{/* <span className="status" style={makeStyle(row.status)}>{row.status}</span> */}

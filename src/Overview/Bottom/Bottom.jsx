@@ -1,15 +1,15 @@
 import React from "react";
 import Table from "./Table/Table";
+import ContinuousGraph from "./ContinuousGraph/ContinuousGraph";
 import "./Bottom.css";
-import PieChart from "./ContinuousGraph/ContinuousGraph";
 
-const Middle = () => {
+const Bottom = () => {
   return (
-    <div className="Middle">
+    <div className="Bottom">
         <Table />
-        <PieChart />
+        <ContinuousGraph />
     </div>
   );
 };
 
-export default Middle;
+export default Bottom;

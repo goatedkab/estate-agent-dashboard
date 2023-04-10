@@ -35,15 +35,16 @@ function CompactCard({ param, setExpanded }) {
       onClick={setExpanded}
     >
       <div className="radialBar">
-        <CircularProgressbar
+      <span>{param.title}</span>
+
+        {/* <CircularProgressbar
           value={param.barValue}
           text={`${param.barValue}%`}
-        />
-        <span>{param.title}</span>
+        /> */}
       </div>
       <div className="detail">
         <Png />
-        <span>${param.value}</span>
+        <span>{param.value}</span>
       </div>
     </motion.div>
   );
@@ -77,7 +78,7 @@ function ExpandedCard({ param, setExpanded }) {
       },
       stroke: {
         curve: "smooth",
-        colors: ["white"],
+        colors: ["var(--offPurple)"],
       },
       tooltip: {
         x: {
@@ -85,7 +86,7 @@ function ExpandedCard({ param, setExpanded }) {
         },
       },
       grid: {
-        show: true,
+        show: false,
       },
       xaxis: {
         type: "datetime",
@@ -118,7 +119,6 @@ function ExpandedCard({ param, setExpanded }) {
       <div className="chartContainer">
         <Chart options={data.options} series={param.series} type="area" />
       </div>
-      <span>Last 24 hours</span>
     </motion.div>
   );
 }

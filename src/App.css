@@ -4,29 +4,33 @@
   --gray: #939393cb;
   --siftPurple:  #6E71D8;
   --offBlack: #1e1e1e;
-  --offPurple:  #8059e4;
+  --offPurple:  #b090ff;
   --pink: #FF919D;
-  --glass: rgba(255, 255, 255, 0.989);
-  --dashboard: rgb(255, 255, 255);
-  --boxShadow: rgba(70, 52, 93, 0.177) 0px 10px 50px;
+  --lightGray: #8b8b8bba;
+  --glass: rgb(255, 255, 255);
+  --boxShadow: rgba(34, 10, 67, 0.098) 0px 10px 50px;
   --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.123);
   --activeItem: #545454ba;
-  --hozGap: 2.2rem;
-  --vertGap: 2.2rem;
+  --hozGap: 2.1rem;
+  --vertGap: 2rem;
   --borderRadius: 1.5rem;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Montserrat:wght@500;700&family=Poppins:wght@500;700&display=swap');
 
 
+.section-title{
+  padding-left: 1.25rem;
+}
+
 .App {
   /* padding: 0.5rem 3.5rem; */
   color: var(--black);
   background: linear-gradient(
     106.37deg,
-    #a57be0 29.63%,
-    rgb(175, 157, 247) 51.55%,
-    #6E71D8
+    #c3a5ee 29.63%,
+    rgb(196, 182, 254) 51.55%,
+    #9194e6
  90.85%
   );
   position: absolute;

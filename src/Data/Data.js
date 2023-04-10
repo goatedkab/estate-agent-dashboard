@@ -6,6 +6,11 @@ import {
   UilPackage,
   UilChart,
   UilSignOutAlt,
+  UilTagAlt,
+  UilComments,
+  UilCloudHeart,
+  UilHouseUser,
+
   UilCreateDashboard,
 } from "@iconscout/react-unicons";
 
@@ -70,70 +75,76 @@ export const SidebarData = [
   },
 ];
 
+
+
+
+
+
+
 // Analytics Cards Data
 export const cardsData = [
   {
-    title: "Sales",
+    title: "Being Rented",
     color: {
       backGround: "white",
       boxShadow: "var(--boxShadow)",
     },
-    barValue: 70,
-    value: "25,970",
-    png: UilUsdSquare,
+    barValue: 50,
+    value: "53",
+    png: UilHouseUser,
     series: [
       {
-        name: "Sales",
+        name: "Houses Being Rent",
         data: [31, 40, 28, 51, 42, 109, 100],
       },
     ],
   },
   {
-    title: "Revenue",
+    title: "Listed",
     color: {
       backGround: "white",
       boxShadow: "var(--boxShadow)",
     },
     barValue: 80,
-    value: "14,270",
-    png: UilMoneyWithdrawal,
+    value: "32",
+    png: UilTagAlt,
     series: [
       {
-        name: "Revenue",
-        data: [10, 100, 50, 70, 80, 30, 40],
+        name: "Listings on Display",
+        data: [31, 40, 28, 51, 42, 109, 100],
       },
     ],
   },
   {
-    title: "Revenue",
+    title: "In Discussion",
     color: {
       backGround: "white",
       boxShadow: "var(--boxShadow)",
     },
-    barValue: 80,
-    value: "14,270",
-    png: UilMoneyWithdrawal,
+    barValue: 23,
+    value: "18",
+    png: UilComments,
     series: [
       {
-        name: "Revenue",
-        data: [10, 100, 50, 70, 80, 30, 40],
+        name: "Listings in Discussion",
+        data: [31, 40, 28, 51, 42, 109, 100],
       },
     ],
   },
   {
-    title: "Expenses",
+    title: "Traction (likes)",
     color: {
       backGround:
         "white",
       boxShadow: "var(--boxShadow)",
     },
     barValue: 60,
-    value: "4,270",
-    png: UilClipboardAlt,
+    value: "4k",
+    png: UilCloudHeart,
     series: [
       {
-        name: "Expenses",
-        data: [10, 25, 15, 30, 12, 15, 20],
+        name: "Traction on App",
+        data: [31, 40, 28, 51, 42, 109, 100],
       },
     ],
   },

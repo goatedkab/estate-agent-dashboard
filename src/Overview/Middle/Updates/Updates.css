@@ -1,30 +1,88 @@
 
 .Updates{
-    width: 85%;
     background: white;
     border-radius: 0.7rem;
     gap: 1rem;
-    display: flex;
-    flex-direction: column;
-    font-size: 12px;
     box-shadow: var(--boxShadow);
     border-radius: var(--borderRadius);
     height: auto;
     overflow: scroll;
-    flex: 2;
-
 }
 
-.update{
-    display: flex;
-    gap: 0.5rem;
+.table-holder{
+    padding: 1rem;
+    padding-top: 0.5rem;
+    width: auto;
 }
 
-.update>img{
-    width: 3.2rem;
+
+.styled-table {
+    font-size: 0.8em;
+    font-family: 'montserrat', 'sans-serif';
+    min-width: 500px;
+    font-weight: 500;
+}
+
+.styled-table thead tr {
+    color: #c1c1c1;
+    text-align: left;
+    
+
+}
+.styled-table td {
+    padding: 4px 15px;
+}
+
+.styled-table th {
+    padding: 0px 15px 10px;
+}
+
+
+
+
+.propertyPic{
+    background-color: rgb(255, 255, 255);
     height: 3.2rem;
+    width: 3.2rem;
+    border-radius: 0.7rem;
+  }
+  
+  .propertyPic img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.7rem;
+  }
+
+
+.agent-cell{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.8rem;
 }
 
-.noti>div>span:nth-of-type(1){
-    font-weight: bold;
-}
+  .property-cell{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.8rem;
+  }
+  
+  .property-cell span{
+    line-height: 15px;
+  }
+
+  .date-cell{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .bullet-point{
+    height: 0.6rem;
+    width: 0.6rem;
+    background-color: var(--siftPurple);
+    border-radius: 50%;
+  }

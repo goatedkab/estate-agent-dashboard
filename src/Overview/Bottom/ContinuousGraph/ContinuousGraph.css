@@ -4,5 +4,8 @@
     box-shadow: var(--boxShadow);
     width: auto;
     flex: 1;
+}
 
+.chart-holder{
+    padding: 0.25rem;
 }

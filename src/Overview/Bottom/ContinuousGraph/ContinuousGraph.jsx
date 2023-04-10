@@ -13,7 +13,6 @@ const ContinuousGraph = () => {
     options: {
       chart: {
         type: "area",
-        height: "auto",
       },
 
       fill: {
@@ -63,8 +62,10 @@ const ContinuousGraph = () => {
   };
   return <div 
   className="ContinuousGraph">
-        <h2>Bar Chart</h2>
-        <Chart options={data.options} series={data.series} type="area" />
+        <h2 className="section-title">Bar Chart</h2>
+        <div className="chart-holder">
+        <Chart options={data.options} series={data.series} type="area" height={'90%'}/>
+        </div>
   </div>;
 };
 

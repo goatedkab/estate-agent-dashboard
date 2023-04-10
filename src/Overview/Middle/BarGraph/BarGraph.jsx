@@ -89,8 +89,8 @@ const BarGraph = () => {
 
   return <div 
   className="BarGraph">
-    <h2>Bar Chart</h2>
-        <Chart options={data.options} series={data.series} type="bar" />
+    {/* <h2>Bar Chart</h2> */}
+        {/* <Chart options={data.options} series={data.series} type="bar" /> */}
   </div>;
 };
 

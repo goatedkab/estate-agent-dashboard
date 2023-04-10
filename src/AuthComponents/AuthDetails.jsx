@@ -32,6 +32,8 @@ const AuthDetails = () => {
       .catch((error) => console.log(error));
   };
 
+  console.log(authUser)
+
 
   return (
     <div>

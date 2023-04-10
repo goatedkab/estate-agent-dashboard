@@ -22,19 +22,25 @@ const SignIn = () => {
     <div className="sign-in-container">
       <form onSubmit={signIn} className="sign-in-form">
         <h1>Login</h1>
+        <div className="form-box">
+        <span>username</span>
         <input
           type="email"
           placeholder="Enter your email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         ></input>
+        </div>
+        <div className="form-box">
+        <span>password</span>
         <input
           type="password"
           placeholder="Enter your password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         ></input>
-        <button type="submit" className="Login-button">Log In</button>
+        </div>
+        <button type="submit" className="Login-button">Login</button>
       </form>
     </div>
   );
